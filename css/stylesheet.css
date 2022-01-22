@@ -97,6 +97,7 @@ li {
   font-size: 6.5px;
   padding-top: 5px;
   animation: fade-in 5s;
+  width: 716px;
 }
 
 @keyframes fade-in {
@@ -120,6 +121,7 @@ li {
   color: white;
   padding: 50px 0px 50px 0px;
   font-family: 'Open sans';
+  font-style: bold;
   letter-spacing: 2px;
   position: relative;
   bottom: 0;
@@ -139,7 +141,9 @@ li {
 }
 
 #main {
-  max-width: 300px;
+  max-width: 700px;
+  margin-top: 16px;
+  font-size: 15px;
 }
 
 .listwrapper {
@@ -202,16 +206,7 @@ li {
   font-size: 32px;
   color: black;
 }
-.projects > div {
-  background-color:  #212529;
-  padding: 2%;
-  margin: auto;
-  width: 40%;
-   border: 0.1px solid #212529;
-  -webkit-box-shadow: 3px 2px 7px -1px rgba(0,0,0,0.18);
--moz-box-shadow: 3px 2px 7px -1px rgba(0,0,0,0.18);
-box-shadow: 3px 2px 7px -1px rgba(0,0,0,0.18);
-}
+
 
 .pill {
   background-color: #efefef;
@@ -239,6 +234,7 @@ a:hover {
   margin: 0;
 
   margin-bottom: 20px;
+  margin-top: 20px
 }
 
 
@@ -281,10 +277,11 @@ a:hover {
   text-align: center;
   font-family: 'Open sans';
   font-size: 32px;
+  font-style: bold;
 }
 
 button {
-  background-color: #4CAF50; /* Green */
+background-color: #4CAF50; /* Green */
  border: none;
  color: white;
  padding: 15px 32px;
@@ -361,6 +358,11 @@ input[type=submit]:hover {
 }
 
 
+.col-lg {
+  background-color: #212529;
+  margin: 20px;
+}
+
 
 
 /* Mobile optimization */
@@ -406,9 +408,8 @@ input[type=submit]:hover {
   }
 
 
-  .projects > div {
-    width: 75%;
-  }
+
+  
 }
 
 @media only screen and (min-width: 992px) {
@@ -457,45 +458,166 @@ input[type=submit]:hover {
     display: inline-block;
     text-align: left;
   }
-  .projects > div {
-    width: 40%;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
   .list1 {
     display: block;
     text-align: center;
-
   }
 
   .list2 {
     display: block;
     text-align: center;
-
   }
 
   .list3 {
     display: block;
     text-align: center;
-
   }
+
   .list3 h2 {
     text-align: center;
   }
+
   ul {
   list-style-type: none;
   padding-bottom
-}
-.projects > div {
-  width: 80%;
-}
+  }
 
-form {
+  .projects > div {
+    width: 80%;
+    display: block;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  input[type=submit] {
   width: 300px;
-}
-input[type=submit] {
-width: 300px;
+  }
 }
 
+.img-static {
+  max-width: 400px;
+  max-height: 300px;
+}
+
+
+.img-static:hover {
+  opacity:0;
+}
+
+.img-active{
+
+}
+
+#technologies{
+  display: block;
+  font-weight: bold;
+}
+
+#projectsheader{
+  font-weight: bold;
+  padding-top: 40px;
+  padding-bottom: 8px;
+}
+
+
+.project-title, .description{
+  padding-top: 4px;
+  color: white;
+  padding-right: calc(var(--bs-gutter-x) * .5); /*Same padding as containers below */
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.technology-wrapper{
+  padding-right: calc(var(--bs-gutter-x) * .5); /*Same padding as containers below */
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+
+.col-sm-12{
+  background-color: white;
+  height: 300px;
+}
+
+
+/* Ascii title */
+.hover-cursor {
+  /* display: table; */
+  width: 30px;
+  padding-top: 8px;
+  float: right;
+  /* margin-bottom: 10px;  */
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  filter: invert(60%) sepia(19%) saturate(1599%) hue-rotate(93deg) brightness(90%) contrast(86%);
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.professional{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.projects{
+  padding-top: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+}
+
+.container{
+  padding-bottom: 16px;
+}
+
+.overlay{
+  display: none;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+
+.col-sm-12:hover .img-static{
+display: none;
+}
+
+.col-sm-12:hover .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+top: 0px;
+left: 0px;
+  
+  opacity: 1;
+}
+
+.img-active{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
