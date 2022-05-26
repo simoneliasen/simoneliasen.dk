@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135196336-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'UA-135196336-1');
   </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,16 +19,12 @@
   <meta name="theme-color" content="#212529">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>Simon Eliasen</title>
 </head>
-
 <body>
-
-  <!--Main wrapper for top page  -->
   <div class="mainwrapper">
     <div class="title">
       <pre>
@@ -46,13 +38,10 @@ Mb     dM   MM    MM    MM    MM  YA.   ,A9   MM    MM        MM     ,M   MM    
 P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..JMML.`Moo9^Yo.M9mmmP'  `Mbmmd' .JMML  JMML.
     </pre>
     </div>
-
-    <!-- Portrait swipe  -->
     <div class="portrait">
       <img src="img/portrait.png" alt="Graphic image of website owner">
     </div>
-    <!--Code:  Add syntax colors -->
-    <div class="code">
+    <div class="code" style="padding-top: 20px;">
       <pre>
   class Person:
 
@@ -65,7 +54,6 @@ P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..J
       def age(self):
           today = datetime.date.today()
           age = today.year - self.birthdate.year
-    
           return age
 
   me = Person(
@@ -76,109 +64,95 @@ P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..J
   )
 </pre>
     </div>
-
-    <!-- Mainwrapper end  -->
   </div>
-
-  <!--My work wrapper  -->
   <div class="content">
-
     <div class="introwrapper">
       <div class="intro">
         <h1>ABOUT ME </h1>
-
         <p id="main">
-          Hi, my name is Simon Eliasen, I am 24 years old and currently enrolled at Aalborg University at my 7th semester, studying a master in Computer science. <br><br>
-          My background is cross disciplinary, in both business, design, communication and software, as a result of personal hobbies, schooling and a natural curiosity.
-          My professional motivation is based on creating/working with state-of-the-art applications/technology. <br><br>
-          Through my earlier professional work and my project-work at university, I have honed the skill of creating fully fledged applications in limited timespans, often entailing working on complex problems with hard-set deadlines, while maintaining a relationship with stakeholders or various third parties.
-          <br><br>
-          I would describe myself as highly motivated, a quick learner and ready to take on a responsibility and adapt to continuous changes on a project and industry-basis.
+          My name is Simon Eliasen, 24 years old and currently enrolled at Aalborg University, studying Computer Science at my 7th semester.<br><br>
+          Cross disciplinary skills, in both business, design, communication and software.
+          Motivated to create/work with state-of-the-art technology. <br><br>
+          Through previous work, I have honed the skill of creating fully fledged applications in limited timespans, entailing complex problems, hard-set deadlines and maintenance of relationships with stakeholders. <br><br>
+          I would describe myself as highly motivated, a quick learner and ready to take on a responsibility and adapt to continuous changes in the industry.
         </p>
       </div>
     </div>
   </div>
-
-  <h2 id="projectsheader">PROFESSIONAL WORK</h2>
+  <h2 id="projectsheader" class="professionalheader">PROFESSIONAL WORK</h2>
   <div class="container">
     <div class="row">
       <div class="col-lg professional">
         <div class="container">
           <div class="row">
             <div class="col-sm-12" style="position:relative;">
-              <!--Static standard (logo)-->
-              <img class="hover-cursor" src="img/hover-cursor.png">
-              <img class="img-static rounded mx-auto d-block" style="padding-top: 123.09px;" width="250px;" src="img/perfionlogo.png">
-              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/perfiondemo/perfionproject1.png">
+              <img class="hover-cursor" src="img/icons/hover-cursor.png">
+              <img class="img-static rounded mx-auto d-block" style="padding-top: 123.09px;" width="200px;" src="img/perfion/perfionlogo.png">
+              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="200px;" src="img/perfion/perfionproject1.png">
+              <a href="https://www.perfion.com/pim-features/perfion-dashboard/" target=”_blank”><img class="links" src="img\icons\website.png"></a>
             </div>
           </div>
         </div>
         <p class="description">
-          Perfion Product Information Management (PIM) gives you a single, unified source of product data <br><br>
-
-          A PIM system’s most important task is to help a company manage large amounts of complex product information and distribute all of this information efficiently on the relevant channels.
+        <b>Software Developer</b> <br> Nov 2019 - Jan 2021 <br><br>
+        Perfion Product Information Management (PIM) aims to equip customers with a single, unified source of product information, working along multiple channels and languages.
           <br><br>
-          The Perfion Product Information Management (PIM) system gives you full control of your product data, freeing up your valuable time for core tasks instead of searching for information and managing various systems.
-          <br><br>
-          <u>My involvement with Perfion:</u> <br>
-          - Various front-end development with Angular and Typescript. <br>
+          <u>My involvement:</u> <br>
+          - Development of customizable dashboard for casual users <br>
+          - Prototyping and sketching <br>
+          - Front-end development with Angular and Typescript. <br>
           - Data visualization and Business Intelligence <br>
           - Involvement with users in the design process of new features.
         </p>
         <div class="technology-wrapper">
-          <p id="technologies">Technologies used:</p>
+          <p id="technologies">Tools & Technologies:</p>
           <div class="pill">JAVASCRIPT</div>
           <div class="pill">SQL</div>
-          <div class="pill">NODE.jS</div>
-          <div class="pill">HTML</div>
+          <div class="pill">NODE.JS</div>
+          <div class="pill">HTML/CSS</div>
           <div class="pill">ADOBEXD</div>
           <div class="pill">PHOTOSHOP</div>
           <div class="pill">GIT</div>
-          <div class="pill">CSS</div>
           <div class="pill">TYPESCRIPT</div>
           <div class="pill">ANGULAR</div>
           <div class="pill">DEVEXTREME</div>
           <div class="pill">CONTENT WRITING</div>
-
         </div>
       </div>
-
       <div class="col-lg professional">
         <div class="container" ">
     <div class=" row">
           <div class="col-sm-12" style="position:relative;">
-            <img class="hover-cursor" src="img/hover-cursor.png">
-            <img class="img-static rounded mx-auto d-block " style="padding-top: 125px;" src="img/ustepperlogo.png">
-            <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/ustepperdemo/ustepper.PNG">
+            <img class="hover-cursor" src="img/icons/hover-cursor.png">
+            <img class="img-static rounded mx-auto d-block " style="padding-top: 125px;" src="img/ustepper/ustepperlogo.png">
+            <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/ustepper/ustepper.PNG">
+            <a href="https://www.ustepper.com/" target=”_blank”><img class="links" src="img\icons\website.png"></a>
           </div>
         </div>
       </div>
       <p class="description">
-
-        uStepper is a Kickstarter funded startup developing microcontrollers to remove drawbacks from the stepper motor. The products are both aimed towards hobbyists, professionals, and educators throughout the world. uStepper provides a product range spanning from microcontrollers to robot arms.
-        <br><br>
-        In relation to my job at uStepper, i was tasked with making a redesign with a focus on modernizing the site aswell as making it appeal to the target group of the product, a focus was also to maintain a high emphasis on usability.
-        The website was developed in already established Content management systems, to give the founders control of content posted on the site
+      <b>Sales- and Marketing Responsible</b>  <br>Feb 2019 - Dec 2019 <br><br>
+      uStepper is a Kickstarter funded startup developing microcontrollers to remove drawbacks from the stepper motor. 
+      Their product range span from microcontrollers to robot arms. 
         <br> <br>
-        <u>My involvement with uStepper:</u> <br>
-        - Webdesign and development.<br>
+        <u>My involvement:</u> <br>
+        - Web design and development of new website.<br>
+        - Increased user retention on website by 110% <br>
         - Graphic marketing material.<br>
-        - Involvement with facebook advertisement.<br>
-        - Video production and editing thereof.<br>
-        - Creation of sales material.<br>
+        - Facebook advertisement.<br>
+        - Video production and editing.<br>
       </p>
-
       <div class="technology-wrapper">
-        <p id="technologies">Technologies used:</p>
+        <p id="technologies">Tools & Technologies:</p>
         <div class="pill">PHP</div>
         <div class="pill">SQL</div>
-        <div class="pill">CSS</div>
-        <div class="pill">HTML</div>
         <div class="pill">WORDPRESS</div>
-        <div class="pill">CONTENT WRITING</div>
         <div class="pill">PRESTASHOP</div>
+        <div class="pill">HTML/CSS</div>
+        <div class="pill">SEO</div>
+        <div class="pill">GOOGLE SEARCH CONSOLE</div>
+        <div class="pill">CONTENT WRITING</div>
         <div class="pill">PHOTOSHOP</div>
-        <div class="pill">ADOBEXD</div>
         <div class="pill">FACEBOOK ADVERTISEMENT</div>
         <div class="pill">VIDEO PRODUCTION</div>
         <div class="pill">VIDEO EDITING</div>
@@ -186,95 +160,33 @@ P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..J
     </div>
   </div>
   </div>
-
-
   <h2 id="projectsheader">PROJECTS</h2>
   <div class="container" style="padding-bottom: 40px;">
-    <div class="row">
-      <div class="col-lg projects">
+  <div class="row">
+
+  <div class="col-lg projects">
         <div class="container">
           <div class="row">
             <div class="col-sm-12" style="position:relative;">
-              <img class="hover-cursor" src="img/hover-cursor.png">
-              <img class="img-static rounded mx-auto d-block" height="230px" style="padding-top: 35px" src="img/novefalogo.png">
-              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/novefademo/login.PNG">
+              <img class="hover-cursor" src="img/icons/hover-cursor.png">
+              <img class="img-static rounded mx-auto d-block flatlandlogo" style=" padding-top: 60px; width: 230px;" src="img/flatland/flatland.svg">
+              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/flatland/flatland.gif">
+              <a href="https://github.com/simoneliasen/Flatland-MARL-TMS" target="_blank"><img class="links" src="img\icons\github.png"></a>
+              <a href="img/flatland/flatland.pdf" target="_blank"><img class="links2" src="img\icons\reports.png"></a>
             </div>
           </div>
         </div>
         <p class="description">
-          The purpose of this project has been to
-          identify and analyze the processes of a
-          business with the intent of optimizing
-          them. Furthermore, the integration be-
-          tween IT and the processes of the business
-          has been the end-goal.
-          In this project, a collaboration with
-          Novefa, an agricultural company utilizing
-          vertical farming, has been established.
-          Their processes have been identified and
-          analyzed thoroughly through the use of
-          interviews. In conjunction with the data,
-          the project suggests that the tracking of
-          the growing process could be optimized by
-          utilizing an IoT system.
-          The project follows the principles of Busi-
-          ness Process Management, specifically the
-          BPM lifecycle, to analyze and investigate
-          the processes of the company. This in-
-          cludes the use of an as-is and to-be process
-          models. Furthermore, an analysis of the
-          redesign has been done by the use of the
-          Devil’s Quadrangle. This has been done
-          in order to evaluate the optimal solution
-          that would best fit their needs. Finally, an
-          implementation and an evaluation of the
-          actual IoT system is found in the end of
-          the project.
-        </p>
+        <b> Multi-Agent Reinforcement Learning and Trains </b><br>  
+        The Flatland challenge aims to address the vehicle rescheduling problem by providing a simplistic grid world environment and allowing for diverse solution approaches. The project scored a 3rd place.
+        <br> <br>
+        <u>My involvement:</u> <br>
+        - State-of-the art reinforcement learning model(PPO) <br> 
+        - Curriculum learning in complex level specifications and multiple agents <br>
+        - Alteration of models observation-space<br>
+        - Hyperparameter tuning and other optimization techniques<br>
         <div class="technology-wrapper">
-          <p id="technologies">Technologies used:</p>
-          <div class="pill">JAVASCRIPT</div>
-          <div class="pill">NODE.JS</div>
-          <div class="pill">AUTHENTICATION</div>
-          <div class="pill">HTML</div>
-          <div class="pill">CSS</div>
-          <div class="pill">BOOTSTRAP</div>
-          <div class="pill">SQL</div>
-          <div class="pill">API</div>
-          <div class="pill">IOT</div>
-          <div class="pill">JSBARCODE</div>
-        </div>
-      </div>
-      <div class="col-lg projects">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12" style="position:relative;">
-              <img class="hover-cursor" src="img/hover-cursor.png">
-              <img class="img-static rounded mx-auto d-block" style="max-width: 500px; padding-top: 19.172px" src="img/flatlandlogo.jpg">
-              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/flatlanddemo/flatland.gif">
-            </div>
-          </div>
-        </div>
-        <p class="description">An automated Traffic Management System
-          (TMS) is a prospective solution that can
-          address the increase in complexity and
-          efficiently manage railway traffic. As such,
-          this project investigates the development of
-          a Reinforcement Learning (RL) based TMS
-          for a simplified 2D grid environment named
-          Flatland.
-          The developed TMS utilizes an actor-critic
-          Proximal Policy Optimization (PPO) architecture, along with a customized tree-based
-          observation model. Furthermore, the
-          developed TMS has been optimized with
-          curriculum learning, frame skipping and
-          hyperparameter tuning.
-          Overall the developed TMS shows potential
-          regarding scalability, adaptability, and generalizability, within the confines of the Flatland
-          challenge 3, it achieved a third place in the
-          RL submission category. </p>
-        <div class="technology-wrapper">
-          <p id="technologies">Technologies used:</p>
+          <p id="technologies">Tools & Technologies:</p>
           <div class="pill">PYTHON</div>
           <div class="pill">PYTORCH</div>
           <div class="pill">NUMPY</div>
@@ -287,48 +199,126 @@ P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..J
           <div class="pill">ACTION-MASKING</div>
         </div>
       </div>
-    </div>
-    <div class="row">
+
       <div class="col-lg projects">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12" style="position:relative;">
-              <img class="hover-cursor" src="img/hover-cursor.png">
-              <img class="img-static rounded mx-auto d-block " style="padding-top: 120px;" height="180px" src="img/cafefrederiksberglogo.png">
-              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/cafefrederiksbergdemo/cafefrederiksberg.PNG">
+            <div class="col-sm-12" style="background-color: #FFFFFF; position:relative;">
+              <img class=" rounded mx-auto d-block" style="padding-top: 40px; width: 450px;" src="img/x-map/ForsideGalore.png">
+        
+              <a href="https://github.com/simoneliasen/x-map" target="_blank"><img class="links" src="img\icons\github.png"></a>
+              <a href="img/x-map/P8___Medical_Diagnostics_Using_Computer_Vision__Copy_.pdf" target="_blank"><img class="links2" src="img\icons\reports.png"></a>
+              
             </div>
           </div>
         </div>
-        <p class="description">In relation to a project at Aalborg University in my 2nd semester, with the title "construction and evaluation of an IT-system" we developed a content management system for local business.
-          The IT-system was developed with <a href="https://www.amazon.com/Designing-Interactive-Systems-Comprehensive-Interaction/dp/1447920112/ref=sr_1_7?keywords=designing+interactive&qid=1561819268&s=gateway&sr=8-7">Benyon's design principles</a> and was further evaluated according to <a href="https://www.amazon.com/Usability-Engineering-Jakob-Nielsen/dp/0125184069/ref=sr_1_4?keywords=Jakob+nielsen&qid=1561819287&s=gateway&sr=8-4">Jakob Nielsen's Usability heuristics</a> as well as <a href="https://samfundslitteratur.dk/visuelkommunikation">Lisbeth Thorlacius' guidelines for visual communication on digital media</a>.
-          The focus on the project was to make a system that reflects Café Frederiksbergs visual identity aswell as making them able to edit content, without the need of a software developer. </p>
+        <p class="description">
+          <b>Robust Tuberculosis Detection With Machine Learning</b><br>
+          Well-performing and robust Convolutional Neural Network(CNN), 
+          that is able to detect tuberculosis in a more nuanced and realistic setting, 
+          with the presence of other similar diseases: 
+            pneumonia, COVID-19, and lung cancer. Furthermore, 
+            interpretation methods are incorporated, such that radiologists can see the 
+            placement of the detected radiographic features.
+          <br> <br>
+        <u>My involvement:</u> <br>
+        - Thorough model and data augmentation selection<br>
+        - U-Net utilization to improve performance of model<br>
+        - Class Activation Map (CAM) to interpret model results<br>
+        - Early Stopping and K-fold cross validation to optimize the model<br>
+        </p>
         <div class="technology-wrapper">
-          <p id="technologies">Technologies used:</p>
-          <div class="pill">PHP</div>
-          <div class="pill">SQL</div>
-          <div class="pill">JAVASCRIPT</div>
-          <div class="pill">CSS</div>
-          <div class="pill">SKELETON FRAMEWORK</div>
-          <div class="pill">HTML</div>
-          <div class="pill">ADOBEXD</div>
-          <div class="pill">PHOTOSHOP</div>
-          <div class="pill">SEO</div>
+          <p id="technologies">Tools & Technologies:</p>
+          <div class="pill">NUMPY</div>
+          <div class="pill">PYTHON</div>
+          <div class="pill">PYTORCH</div>
+          <div class="pill">CLASS ACTIVATION MAPS(CAM)</div>
+          <div class="pill">U-NET</div>
+          <div class="pill">WANDB.AI</div>
+          <div class="pill">DATA AUGMENTATION</div>
+          <div class="pill">CONVOLUTIONAL NEURAL NETWORK(CNN)</div>
+          <div class="pill">VGG</div>
+          <div class="pill">EFFICIENTNET</div>
+          <div class="pill">INCEPTION</div>
+          <div class="pill">DENSENET</div>
+          <div class="pill">RESNEXT</div>
+          <div class="pill">EARLY STOPPING</div>
+          <div class="pill">K-FOLD CROSS VALIDATION</div>
+          <div class="pill">DATASET DESIGN</div>
         </div>
       </div>
+    </div>
+    
+    <div class="row">
+
+    <div class="col-lg projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12" style="position:relative;">
+              <img class="hover-cursor" src="img/icons/hover-cursor.png">
+              <img class="img-static rounded mx-auto d-block" height="230px" style="padding-top: 35px" src="img/novefa/novefalogo.png">
+              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/novefa/login.PNG">
+              <a href="https://github.com/emilravn/novefa" target="_blank"><img class="links" src="img\icons\github.png"></a>
+              <a href="img/novefa/novefa.pdf" target="_blank"><img class="links2" src="img\icons\reports.png"></a>
+            </div>
+          </div>
+        </div>
+        <p class="description">
+        <b>IOT Solution for Vertical Farming</b><br>
+        Novefa is an agricultural company utilizing vertical farming to farm a variety of produce.
+        <br> <br>
+        <u>My involvement:</u> <br>
+        - Collaboration with external business: Novefa<br>
+        - Analysis of optimization of business processes <br> 
+        - IOT-system for tracking inventory, growing and traceability of produce<br>
+        - Web interface to monitor the system <br>
+      </p>
+        <div class="technology-wrapper">
+          <p id="technologies">Tools & Technologies:</p>
+          <div class="pill">JAVASCRIPT</div>
+          <div class="pill">NODE.JS</div>
+          <div class="pill">AUTHENTICATION</div>
+          <div class="pill">RASPBERRY PI</div>
+          <div class="pill">HTML/CSS</div>
+          <div class="pill">BOOTSTRAP</div>
+          <div class="pill">SQL</div>
+          <div class="pill">API</div>
+          <div class="pill">INTERNET OF THINGS(IOT)</div>
+          <div class="pill">JSBARCODE</div>
+        </div>
+      </div>
+
+     
+
+
+
+
+   
+
+
       <div class="col-lg projects">
         <div class="container">
           <div class="row">
             <div class="col-sm-12" style="position:relative;">
-              <img class="hover-cursor" src="img/hover-cursor.png">
-              <img class="img-static rounded mx-auto d-block " style="padding-top: 120px;" height="180px" src="img/carpairlogo.png">
-              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/carpairdemo/searchresult.PNG">
+              <img class="hover-cursor" src="img/icons/hover-cursor.png">
+              <img class="img-static rounded mx-auto d-block " style="padding-top: 120px; max-width: 300px; width:230px;" height="auto" src="img/carpair/carpairlogo.png">
+              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/carpair/carpairdemo.png">
+              <a href="https://github.com/ThomasTVV/carpair" target="_blank"><img class="links" src="img\icons\github.png"></a>
+              <a href="img/carpair/carpair.pdf" target="_blank"><img class="links2" src="img\icons\reports.png"></a>
             </div>
           </div>
         </div>
-        <p class="description">CarPair seeks to establish trust and streamline the car sales process, by establishing a decentralized platform that makes use of a webscraper that scours the web for car listings.
-          The gathered data is then further complimented by using Automatic Numberplate Recognition(ANPR) software to extract number plates from car listings, which further enriches the gathered data, by using external API's. This results in a decentralized platform with car listings that have universally enriched data, whose parameters can then be further searched and filtered through. </p>
+        <p class="description">
+        <b>ANPR-System to Streamline Car Sales</b><br>  
+        CarPair seeks to establish trust and streamline the car sales process, by establishing a decentralized platform that carries universally enriched car listings.
+        <br> <br>
+        <u>My involvement:</u> <br>
+        - Development of fully fledged application and concept<br>
+        - Number plate recognition and image processing <br>
+        - Optical character recognition and data gathering <br>  
+        - Recommendation system<br>
         <div class="technology-wrapper">
-          <p id="technologies">Technologies used:</p>
+          <p id="technologies">Tools & Technologies:</p>
           <div class="pill">JAVASCRIPT</div>
           <div class="pill">NODE.jS</div>
           <div class="pill">PYTHON</div>
@@ -336,93 +326,179 @@ P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..J
           <div class="pill">YOLOV4</div>
           <div class="pill">COMPUTER VISION</div>
           <div class="pill">OPENCV</div>
-          <div class="pill">OPTICAL CHARCHTER RECOGNITION(OCR)</div>
+          <div class="pill">IMAGE PROCESSING</div>
+          <div class="pill">OPTICAL CHARACTER RECOGNITION(OCR)</div>
           <div class="pill">CONVOLUTIONAL NEURAL NETWORK(CNN)</div>
-          <div class="pill">CSS</div>
           <div class="pill">BOOTSTRAP</div>
-          <div class="pill">HTML</div>
+          <div class="pill">HTML/CSS</div>
           <div class="pill">ADOBEXD</div>
           <div class="pill">PHOTOSHOP</div>
+          <div class="pill">SCRUM</div>
         </div>
       </div>
     </div>
+
     <div class="row">
+
       <div class="col-lg projects">
         <div class="container">
           <div class="row">
             <div class="col-sm-12" style="background-color: #129F57; position:relative;">
-              <img class="hover-cursor" src="img/hover-cursor.png">
-              <img class="img-static rounded mx-auto d-block" style="padding-top: 107.5px;" src="img/teamberlogo.png">
-              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/teamberdemo/take-questionnaire.png">
+              <img class="hover-cursor" src="img/icons/hover-cursor.png">
+              <img class="img-static rounded mx-auto d-block" style="padding-top: 107.5px; width:230px;" src="img/teamber/teamberlogo.png">
+              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="230px;" src="img/teamber/teamber.png">
+              <img class="links" src="img\icons\github.png">
+              <a href="https://github.com/simoneliasen/Teamber" target="_blank"><img class="links" src="img\icons\github.png"></a>
+              <a href="img/teamber/teamber.pdf" target="_blank"><img class="links2" src="img\icons\reports.png"></a>
             </div>
           </div>
         </div>
         <p class="description">
-          The following report describes the process
-          of creating an IT system in order to
-          optimize the team creation process, based
-          on user-submitted data. An iterative
-          and object-oriented approach was used
-          to accomplish this. To gain the proper
-          knowledge needed to create this system,
-          research was conducted on the matter of
-          team creation and personality types, and
-          a system definition was created, to gain
-          a proper understanding of the problem
-          at hand. By using the object-oriented
-          approach to identify classes, events and
-          behaviors etc. the development process
-          was aided. The system was developed
-          primarily using C#, ASP.NET and Razor
-          Pages, which allowed the application to be
-          accessible through a web-browser. Visual
-          design methodology was used to create
-          a basic overview of the website’s design.
-          The system was tested throughout the
-          development process, assuring that as
-          many requirements as possible, would be
-          met. In conclusion the system fulfills
-          most of the requirements, but does require
-          further development and testing in order
-          to be deployed in an organisation.
-          The content of the report is freely available, but publication (with source reference) may only take place in
-          agreement with the authors.
+          <b>HR Team Composition Software</b><br>
+          Teamber seeks to optimize the team creation process, based on user-submitted data
+          <br> <br>
+        <u>My involvement:</u> <br>
+        - Development of fully fledged application and concept. <br> 
+        - Creating teams based on users' skill set and personality types. <br>
+        - Problem- and application domain analysis
         </p>
         <div class="technology-wrapper">
-          <p id="technologies">Technologies used:</p>
+          <p id="technologies">Tools & Technologies:</p>
           <div class="pill">C#</div>
           <div class="pill">ASP.NET</div>
           <div class="pill">RAZOR PAGES</div>
-          <div class="pill">CSS</div>
           <div class="pill">BOOTSTRAP</div>
           <div class="pill">AUTHENTICATION </div>
-          <div class="pill">HTML</div>
+          <div class="pill">HTML/CSS</div>
+          <div class="pill">PROTOTYPING</div>
+          <div class="pill">HEURISTIC EVALUATION</div>
         </div>
       </div>
       <div class="col-lg projects">
-        <h3 class="project-title">OTHER PROJECTS</h3> <!-- Pure slideshow -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12" style="position:relative;"> 
+              <img class="rounded mx-auto d-block" style="padding-top: 107.5px; width:140px;" src="img/cowi/cowilogo.png">
+              <a href="img/cowi/cowi.pdf" target="_blank"><img class="links" src="img\icons\reports.png"></a>
+            </div>
+          </div>
+        </div>
+        <p class="description">
+          <b>Analysis of the Human Factor in IT-Security</b><br>
+          Investigating the involvement of the human factor in IT-security and how safety measures are communicated to employees.
+          <br> <br>
+        <u>My involvement:</u> <br>
+        - Collaboration with external business: COWI<br>
+        - Examination of organizational communication regarding IT-security. <br>
+        - Analysis of Employees viewpoint on IT-security courses.
+        </p>
+        <div class="technology-wrapper">
+          <p id="technologies">Tools & Technologies:</p>
+          <div class="pill">COMMUNICATION ANALYSIS</div>
+          <div class="pill">USABILITY TESTING</div>
+          <div class="pill">FOCUS GROUP</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-lg projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12" style="background-color: #129F57; position:relative;">
+              <img class=" rounded mx-auto d-block" style="padding-top: 107.5px; width:230px;" src="img/shareone/shareonelogo.png">
+              <a href="img/shareone/shareone.pdf" target="_blank"><img class="links" src="img\icons\reports.png"></a>
+            </div>
+          </div>
+        </div>
+        <p class="description">
+          <b>Analysis of Trust in the Sharing Economy</b><br>
+          Analysis of how one company in the sharing economy communicate trust to its users, as this is seen as a crucial necessity for the concept.
+          <br> <br>
+        <u>My involvement:</u> <br>
+        - Collaboration with external business: ShareOne<br>
+        - In-depth examination of visual communication and usability<br>
+        - Examination of communication of trustfulness<br>
+        </p>
+        <div class="technology-wrapper">
+          <p id="technologies">Tools & Technologies:</p>
+          <div class="pill">USABILITY TESTING</div>
+          <div class="pill">PROTOTYPING</div>
+          <div class="pill">COMMUNICATION ANALYSIS</div>
+          <div class="pill">ADOBEXD</div>
+          <div class="pill">PHOTOSHOP</div>
+        </div>
+      </div>
+
+      <div class="col-lg projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12" style="position:relative;">
+              <img class="hover-cursor" src="img/icons/hover-cursor.png">
+              <img class="img-static rounded mx-auto d-block " style="padding-top: 120px;" height="180px" src="img/cafefrederiksberg/cafefrederiksberglogo.png">
+              <img class="img-active rounded mx-auto d-block overlay" style="position:absolute;" width="250px;" src="img/cafefrederiksberg/cafefrederiksberg.PNG">
+              <a href="https://cafefrederiksberg.dk/" target="_blank"><img class="links" src="img\icons\website.png"></a>
+              <a href="img/cafefrederiksberg/cafefrederiksberg.pdf" target="_blank"><img class="links2" src="img\icons\reports.png"></a>
+              <a href="https://github.com/simoneliasen/cafefrederiksberg" target="_blank"><img class="links3" src="img\icons\github.png"></a>
+            </div>
+          </div>
+        </div>
+        <p class="description">
+        <b>CMS-System For Restaurant</b><br>    
+        Café Frederiksberg is a local restaurant and music venue.
+          <br> <br>
+        <u>My involvement:</u> <br>
+        - Collaboration with external Business: Café Frederiksberg <br> 
+        - Development of CMS for restaurant and music venue<br>
+        - Focus on usability principles, maintainability and brand identity <br></p>
+        <div class="technology-wrapper">
+          <p id="technologies">Tools & Technologies:</p>
+          <div class="pill">PHP</div>
+          <div class="pill">SQL</div>
+          <div class="pill">JAVASCRIPT</div>
+          <div class="pill">SKELETON FRAMEWORK</div>
+          <div class="pill">HTML/CSS</div>
+          <div class="pill">ADOBEXD</div>
+          <div class="pill">PHOTOSHOP</div>
+          <div class="pill">SEO</div>
+          <div class="pill">PROTOTYPING</div>
+          <div class="pill">USABILITY TESTING</div>
+          <div class="pill">COMMUNICATION ANALYSIS</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+      <div class="row">
+      <div class="col-lg projects">
+        <h3 class="project-title">OTHER PROJECTS</h3> 
         <div class="container">
           <div class="row">
           </div>
         </div>
         <p class="description">
-          <b>Korius: </b> <br> Small personal business, Graphic design, web-development jobs for other small businesses.
+          <b>Korius: </b> <br> Small personal business, that does all degrees of software development and graphic design. 
           <br> <br>
-          <b> COWI:</b> <br>Investigating the involvement of the human factor in IT-security and how safety measures successfully are communicated to employees.
+          <b> Festivalg:</b><br> MVP of application that searches through artists attending danish festivals, as well as other information related to festival-attendance.
+          <a href="https://festivalg99.herokuapp.com/" target="_blank"><img style="display: inline;" width="24" src="img\icons\website.png"></a>
+          <a href="https://github.com/simoneliasen/festivalg" target="_blank"><img style="display: inline;" width="24" src="img\icons\github.png"></a>
+          
           <br><br>
-          <b> ShareOne:</b><br> Research in how companies in the sharing economy communicate trust to the users of their platform, done through usability testing, as a lack of trust, is presented as one of the major challenges in regards to adopting the concept to a business.
-          <br><br>
-          <b> Festivalg:</b><br> MVP of application that searches through artists attending danish festivals, as well as other information related to festival-attendance
-          <br><br>
-          <b>2 cardgames and Yahtzee:</b><br>
-          <br><br>
-          <b> Personal website:</b><br> Oh wow, recursion :-)
+          <b>A Variety of Games:</b><br> Through learning object-oriented programming and going to pubs with friends, I have developed a series of smaller online card and dice games.<br>
+          - Yahtzy. <a href="https://github.com/simoneliasen/Yahtzy" target="_blank"><img style="display: inline;" width="24" src="img\icons\github.png"></a> <br>
+          - Racetrack. <a href="https://github.com/simoneliasen/racetrack" target="_blank"><img style="display: inline;" width="24" src="img\icons\github.png"></a> <br>
+          - Waterfall. <a href="https://github.com/simoneliasen/waterfall" target="_blank"><img style="display: inline;" width="24" src="img\icons\github.png"></a> <br>
+          <br>
+          <b> Personal Website:</b><br> Oh wow, recursion :-)  <a href="https://github.com/simoneliasen/simoneliasen.dk" target="_blank"><img style="display: inline;" width="24" src="img\icons\github.png"></a>  <a href="https://simoneliasen.dk/" target="_blank"><img style="display: inline;" width="24" src="img\icons\website.png"></a>
       </div>
     </div>
   </div>
-  <!-- Contact section -->
+  </div>
   <div class="contactsection">
-    <!--Contact formular  -->
     <div class="contactformular">
       <h2 id="contactme"> CONTACT ME </h2>
       <form action="include/send_form.php" method="post" name="contactform">
@@ -437,18 +513,15 @@ P"Ybmmd"  .JMML..JMML  JMML  JMML. `Ybmd9'  .JMML  JMML.    .JMMmmmmMMM .JMML..J
         <input type="submit" value="Send">
       </form>
     </div>
-    <!--Social media -->
     <div class="social media">
       <h4 id="stayconnected"> STAY CONNECTED </h4>
       <div class="socialmedia">
-        <a href="https://github.com/simoneliasen"><img src="img/github.png" alt="link to github" width="35px"></a>
-        <a href="https://www.instagram.com/simonsiger_/"><img src="img/instagram.png" alt="link to instagram" width="35px"></a>
-        <a href="https://www.linkedin.com/in/simoneliasen/"><img src="img/github.png" alt="link to linkedin" width="35px"></a>
-        <a href="https://open.spotify.com/user/simoneliasen.dk?si=fcfa6c59fc684a93"><img src="img/github.png" alt="link to spotify" width="35px"></a>
-        <!-- Discord -->
+        <a href="https://github.com/simoneliasen"><img src="img/icons/github.png" alt="link to github" class="socialicon" width="35px"></a>
+        <a href="https://www.instagram.com/simonsiger_/"><img src="img/icons/instagram.png" alt="link to instagram" class="socialicon" width="35px"></a>
+        <a href="https://www.linkedin.com/in/simoneliasen/"><img src="img/icons/linkedin.png" alt="link to linkedin" class="socialicon" width="35px"></a>
+        <a href="https://open.spotify.com/user/simoneliasen.dk?si=fcfa6c59fc684a93"><img src="img/icons/spotify.png" alt="link to spotify" class="socialicon" width="35px"></a>
       </div>
     </div>
   </div>
 </body>
-
 </html>
