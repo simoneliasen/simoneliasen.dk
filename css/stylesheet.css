@@ -1,3 +1,30 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+li {
+  color: white;
+}
+
+ul {
+  color: white;
+}
+
+ul li{
+  color: white;
+}
+
+ul li::before {
+  color:whte
+}
+
+
+li p {
+  color: white;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -5,16 +32,9 @@ html, body {
 }
 
 p {
+  font-family: 'Inter var', sans-serif; 
   font-size: 12px;
   display: inline-block;
-}
-
-ul {
-  font-size: 13px;
-}
-
-li {
-  font-size: 12px
 }
 
 /*Wrapper for top section  */
@@ -29,9 +49,9 @@ li {
   /* display: table; */
   font-size: 4px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 24px;
   /* padding-left: 20px;  */
-  padding-bottom: 10px;
+  padding-bottom: 16px;
   /* margin-bottom: 10px;  */
   -webkit-animation: pulsate 3s ease-out;
   -webkit-animation-iteration-count: infinite;
@@ -95,7 +115,7 @@ li {
 /* Code info  */
 .code {
   font-size: 6.5px;
-  padding-top: 5px;
+  padding-top: 16px;
   animation: fade-in 5s;
   width: 716px;
 }
@@ -119,12 +139,13 @@ li {
   margin: 0 auto;
   background-color: #212529;
   color: white;
-  padding: 50px 0px 50px 0px;
-  font-family: 'Open sans';
+  padding: 40px 0px 40px 0px;
   font-style: bold;
   letter-spacing: 2px;
   position: relative;
   bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 32px;
 }
 
 .introwrapper {
@@ -136,7 +157,7 @@ li {
 }
 
 .intro h1 {
-  font-size: 23px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -146,63 +167,12 @@ li {
   font-size: 15px;
 }
 
-.listwrapper {
-  margin-top: 20px;
-}
-.list1 {
-  display: inline-block;
-  padding: 0px 20px 0px 0px;
-}
-
-.list1 ul {
-  margin: 0;
-  padding-left: 20px;
-  /* padding-top: 5px;  */
-}
-
-.list1 h2 {
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-.list2 {
-  display: inline-block;
-  padding: 0px 20px 0px 0px;
-}
-
-.list2 ul {
-  margin: 0;
-  padding-left: 20px;
-  /* padding-top: 5px;  */
-}
-
-.list2 h2 {
-  margin-bottom: 0;
-  font-size: 18px;
-}
-
-.list3 {
-  display: inline-block;
-  padding: 0px 20px 0px 0px;
-}
-
-.list3 ul {
-  margin: 0;
-  padding-left: 20px;
-  /* padding-top: 5px;  */
-}
-
-.list3 h2 {
-  margin-bottom: 0;
-  font-size: 18px;
-  text-align: left;
-}
-
 /* Projects */
 #projectsheader {
   text-align: center;
-  font-family: 'Open sans';
-  padding-top: 10px;
+ /* font-family: 'Open sans'; */
+  /*padding-top: 24px; */ 
+  padding-bottom: 16px;
   font-size: 32px;
   color: black;
 }
@@ -212,12 +182,11 @@ li {
   background-color: #efefef;
   display: inline-block;
   margin: 0.2rem;
-  padding: 0.4rem 0.5rem;
-  border-radius: 25px;
-  font-family: 'Lato', sans-serif;
+  padding: 2px 10px;
+  border-radius: 4px;
+ /* font-family: 'Lato', sans-serif; */
   font-size: 12px;
-  font-color: grey;
-  font-weight: 570;
+  font-weight: 500;
 }
 
 a {
@@ -233,8 +202,8 @@ a:hover {
   padding: 0;
   margin: 0;
 
-  margin-bottom: 20px;
-  margin-top: 20px
+  margin-bottom: 16px;
+  /*margin-top: 16px */
 }
 
 
@@ -251,9 +220,10 @@ a:hover {
 }
 .description {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+ /* font-family: 'Lato', sans-serif; */
   color: white;
   padding-top: 10px;
+  margin-bottom: 0px
 }
 .technologyheader{
   color:white;
@@ -261,7 +231,7 @@ a:hover {
 #technologies {
   color: white;
   font-size: 15px;
-    font-family: 'Open Sans';
+  /*  font-family: 'Open Sans'; */
 }
 
 
@@ -272,19 +242,14 @@ a:hover {
 .contactsection > p, h2, h4 {
   color: white;
 }
-#contactme {
-  padding-top: 30px;
-  text-align: center;
-  font-family: 'Open sans';
-  font-size: 32px;
-  font-style: bold;
-}
+
+
 
 button {
 background-color: #4CAF50; /* Green */
  border: none;
  color: white;
- padding: 15px 32px;
+ padding: 16px 32px;
  text-align: center;
  text-decoration: none;
  display: inline-block;
@@ -299,74 +264,47 @@ background-color: #4CAF50; /* Green */
 }
 
 .socialmedia > img > a {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 #stayconnected {
   text-align: center;
-  font-family: 'Open sans';
-  padding-top: 10px;
+ /*font-family: 'Open sans'; */
+  padding-top: 12px;
+  padding-bottom: 2px;
   font-size: 13px;
 
 }
 
-.contactformular{
-  display: block;
-  text-align: center;
-}
-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  margin-top: 10px;
-  width: 400px;
-}
-
-form > label {
-  font-family: 'Open sans';
-  font-size: 20px;
-  color: white;
-}
-
-input[type=text], input[type=email], textarea[type=text] {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 2px;
-}
-
-input[type=submit] {
-background-color: white;
-color: black;
- border: none;
- padding: 7.5px 16px;
- text-align: center;
- text-decoration: none;
- display: block;
- font-size: 14px;
- transition: 0.4s;
- border-radius: 2px;
- margin-top: 15px;
- width: 400px;
-}
-input[type=submit]:hover {
-  background-color: grey;
-  color: white;
-}
-
-
 .col-lg {
   background-color: #212529;
   margin: 20px;
+  border-radius: 8px;
+  padding-top: 24px;
 }
 
+.col-lg-4 {
+  background-color: #212529;
+  margin: 20px;
+  border-radius: 8px;
+  padding-top: 24px;
+}
+
+.col-lg-3 {
+  background-color: #212529;
+  margin: 20px;
+  border-radius: 8px;
+  padding-top: 24px;
+}
+
+.white{
+  background-color: white;
+}
 
 
 /* Mobile optimization */
 @media only screen and (min-width: 768px) {
+ 
   .portrait img {
     height: 300px;
   }
@@ -383,37 +321,25 @@ input[type=submit]:hover {
     width: 100%;
     bottom: 0px;
   }
+ 
+  .flatlandlogo{
+    max-width: 300px;
+  }
+}
 
-  .listwrapper {
-    text-align: center;
+@media only screen and (max-width: 992px) {
+  .code {
+    width: 500px;
   }
 
-  .listwrapper div {
-    /* padding: 0px 10px 0px 10px; */
+  .col-lg{
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .list1 {
-    display: inline-block;
-    text-align: left;
-  }
-
-  .list2 {
-    display: inline-block;
-    text-align: left;
-  }
-
-  .list3 {
-    display: inline-block;
-    text-align: left;
-  }
-
-
-
-  
 }
 
 @media only screen and (min-width: 992px) {
-
   /* Appetizer size */
   .portrait img {
     height: 450px;
@@ -435,57 +361,17 @@ input[type=submit]:hover {
   .content {
     width: 100%;
   }
-
-  .listwrapper {
-    text-align: center;
+  .flatlandlogo{
+    max-width: 300px;
   }
 
-  .listwrapper div {
-    /* padding: 0px 10px 0px 10px; */
-  }
-
-  .list1 {
-    display: inline-block;
-    text-align: left;
-  }
-
-  .list2 {
-    display: inline-block;
-    text-align: left;
-  }
-
-  .list3 {
-    display: inline-block;
-    text-align: left;
-  }
 
 }
 
 @media only screen and (max-width: 768px) {
-  .list1 {
-    display: block;
-    text-align: center;
+  .code {
+    width: 313px;
   }
-
-  .list2 {
-    display: block;
-    text-align: center;
-  }
-
-  .list3 {
-    display: block;
-    text-align: center;
-  }
-
-  .list3 h2 {
-    text-align: center;
-  }
-
-  ul {
-  list-style-type: none;
-  padding-bottom
-  }
-
   .projects > div {
     width: 80%;
     display: block;
@@ -495,10 +381,16 @@ input[type=submit]:hover {
     width: 300px;
   }
 
+  .flatlandlogo{
+  max-width: 300px;
+  }
+
   input[type=submit] {
   width: 300px;
   }
 }
+
+
 
 .img-static {
   max-width: 400px;
@@ -510,21 +402,23 @@ input[type=submit]:hover {
   opacity:0;
 }
 
-.img-active{
-
-}
 
 #technologies{
   display: block;
   font-weight: bold;
 }
 
-#projectsheader{
+#professionalworkheader{
   font-weight: bold;
-  padding-top: 40px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 16px;
 }
 
+#projectsheader{
+  font-weight: bold;
+  padding-bottom: 16px;
+  padding-top: 12px
+}
 
 .project-title, .description{
   padding-top: 4px;
@@ -570,20 +464,18 @@ input[type=submit]:hover {
   50% {
     opacity: 0.5;
   }
-
-
   100% {
     opacity: 1;
   }
 }
 
 .professional{
-  padding-top: 16px;
+  padding-top: 24px;
   padding-bottom: 16px;
 }
 
 .projects{
-  padding-top: 16px;
+  padding-top: 25px;
   margin-bottom: 40px;
   padding-bottom: 16px;
 }
@@ -620,4 +512,64 @@ left: 0px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+.flatlandlogo{
+  max-width: 300px;
+}
+
+.socialicon{
+  margin: 4px;
+}
+
+.socialmedia{
+  padding-bottom: 20px;
+}
+
+#stayconnected{
+  padding-top: 12px;
+  margin: 4px;
+}
+
+
+#technologies{
+  margin-bottom: 0px;
+}
+
+.links{
+  width: 30px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.links2{
+  width: 30px;
+  position: absolute;
+  bottom: 8px;
+  left: 46px;
+}
+
+.links3{
+  width: 30px;
+  position: absolute;
+  bottom: 8px;
+  left: 80px;
+}
+
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 1;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
